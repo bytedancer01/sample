@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.maxdigitall.maxdigitaliptvbox'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.maxdigitall.maxdigitaliptvbox"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildscript {
+        repositories {
+            google()
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'com.google.gms:google-services:4.3.15' // Firebase için
+        }
+    }
+    allprojects {
+        repositories {
+
+
+        }
+    }
+}
+
+dependencies {
+    // AndroidX ve Core kütüphaneleri
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    // Google Play Hizmetleri (Firebase, Ads, Cast)
+    implementation 'com.google.firebase:firebase-messaging:24.4.0'
+    implementation 'com.google.android.gms:play-services-cast:21.2.0'
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+
+    // ExoPlayer (Video Oynatıcı)
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.0'
+
+    // OneSignal Bildirimleri
+    implementation 'com.onesignal:OneSignal:4.8.5'
+
+    // AWS Amplify
+    implementation 'com.amplifyframework:aws-storage-s3:1.41.0'
+
+    // Facebook Audience Network
+    implementation 'com.facebook.android:audience-network-sdk:6.10.0'
+
+    // QR Kod Tarama (ZXing)
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+
+    // Kamera özellikleri
+    implementation 'androidx.camera:camera-core:1.5.2'
+    implementation 'androidx.camera:camera2:1.5.2'
+}
+

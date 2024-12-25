@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.maxdigitall.maxdigitaliptvbox" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <intent>
+            <action android:name="android.speech.action.RECOGNIZE_SPEECH"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+    </queries>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <permission android:name="com.maxdigitall.maxdigitaliptvbox.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.maxdigitall.maxdigitaliptvbox.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/tv_banner" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.MyApplication" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.Local_media_Activity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AudioPickActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VideoPickActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SpeedTestActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.MultiSettingActivity" android:screenOrientation="sensorLandscape"/>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.VedioFile">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_path"/>
+        </provider>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.fileprovider" android:enabled="true" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AddedExternalPlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ExternalPlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SplashActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.LoginActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ParentalControlActivitity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.NewDashboardActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AccountInfoActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.PlayerSelectionActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ImportEPGActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.NewEPGActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.NewEPGCategoriesActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ViewDetailsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ViewDetailsCastActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.PlayRecordingExternalPlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.StreamFormatActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.TVArchiveActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SubTVArchiveActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VodActivityNewFlowSubCategories" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VodActivityNewFlowSecondSubCategories" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.LiveActivityNewFlow" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.TVArchiveActivityNewFlow" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.TVArchiveActivityLayout" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.TimeFormatActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.EPGChannelUpdateActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VodActivityNewFlow" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VodActivityLayout" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AutomationActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesActivtyNewFlow" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesActivitNewFlowSubCat" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.GeneralSettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.BootStartupActivity" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.YouTubePlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.NotificationActivity" android:screenOrientation="sensorLandscape" android:taskAffinity=""/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.RecordingActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VLCPlayerRecordingActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.MxPlayerRecordingActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AnnouncementsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.AnnouncementAlertActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.maxdigitall.maxdigitaliptvbox.view.ijkplayer.activities.NSTIJKPlayerSkyActivity" android:resizeableActivity="false" android:screenOrientation="sensorLandscape" android:supportsPictureInPicture="true"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.ijkplayer.activities.NSTIJKPlayerVODActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.ijkplayer.activities.NSTIJKPlayerEPGActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.PlayerSettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.CheckAppupdateActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.RateUsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.FreeTrailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ImportM3uActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="redirect_live_tv"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="redirect_vod"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.RoutingActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.LoginM3uActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.MultiUserActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="m3u"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="api"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ViewDetailsTMDBActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesDetailM3UActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesActivityNewFlowSubCategoriesM3U" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesActivityNewFlowM3U" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.PlayExternalPlayerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.ServicesDashboardActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.MySerivcesActiviy" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.MyTicketActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.MyInvoiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.ViewTicketActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.PaidInvoiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.UnpiadInvoiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.CancelInvoiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.InvoiceRefundedActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.ActiveServiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.CancelledSerivceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.PendingServiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.SuspendedServiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.TerminatedServiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.FraudServiceActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.ShowserviceInformationActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.OpenTicketActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.InvoicePaidDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <service android:exported="true" android:foregroundServiceType="" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.notifications.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:foregroundServiceType="" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.notifications.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.WHMCSClientapp.activities.BuyNowActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.chromecastfeature.ExpandedControlsActivity" android:screenOrientation="sensorLandscape" android:theme="@style/ChromecastTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.maxdigitall.maxdigitaliptvbox.view.activity.NewDashboardActivity"/>
+        </activity>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.maxdigitall.maxdigitaliptvbox.miscelleneious.chromecastfeature.CastOptionsProvider"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.ijkplayer.activities.NSTIJKPlayerMultiActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.HoneyPlayer" android:resizeableActivity="false" android:screenOrientation="sensorLandscape" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.chromecastfeature.queue.QueueListViewActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SeriesAllDataSingleActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.VodAllDataSingleActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.LiveAllDataSingleActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.ijkplayer.activities.NSTIJKPlayerSkyTvActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SearchActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.FrontView" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.EPGSettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.SearchActivityLowerSDK" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ScreenTypeActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ScreenTypeSettingsActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.BackupAndRestoreActivity" android:screenOrientation="sensorLandscape"/>
+        <service android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.chromecastfeature.castserver.CastServerService"/>
+        <service android:exported="true" android:foregroundServiceType="" android:name="com.maxdigitall.maxdigitaliptvbox.miscelleneious.StopProcessingTasksService" android:stopWithTask="false"/>
+        <activity android:configChanges="keyboardHidden" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.demo.SampleChooserActivity" android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="asset"/>
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.exolist\\.json"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.maxdigitall.maxdigitaliptvbox.view.demo.PlayerActivity" android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="asset"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.maxdigitall.maxdigitaliptvbox.view.activity.ExoPlayerMoviesSeriesActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.maxdigitall.maxdigitaliptvbox.view.demo.NSTEXOPlayerSkyActivity" android:resizeableActivity="false" android:screenOrientation="sensorLandscape" android:supportsPictureInPicture="true"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.maxdigitall.maxdigitaliptvbox.view.demo.NSTEXOPlayerSkyTvActivity" android:resizeableActivity="false" android:screenOrientation="sensorLandscape" android:supportsPictureInPicture="true"/>
+        <service android:enabled="true" android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"/>
+        <service android:enabled="true" android:name="com.amplifyframework.storage.s3.service.AmplifyTransferService"/>
+        <activity android:name="com.amplifyframework.devmenu.DeveloperMenuActivity" android:theme="@style/OverlayActivity"/>
+        <receiver android:exported="true" android:name="com.onesignal.FCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.maxdigitall.maxdigitaliptvbox"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.onesignal.HmsMessageServiceOneSignal">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.onesignal.NotificationOpenedActivityHMS" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.onesignal.FCMIntentService"/>
+        <service android:exported="false" android:name="com.onesignal.FCMIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.onesignal.SyncService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.onesignal.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.onesignal.NotificationDismissReceiver"/>
+        <receiver android:exported="true" android:name="com.onesignal.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.onesignal.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.NotificationOpenedReceiver" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/title_activity_force_change_password" android:name="com.amazonaws.mobile.auth.userpools.ForceChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/title_activity_forgot_password" android:name="com.amazonaws.mobile.auth.userpools.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/title_activity_sign_up" android:name="com.amazonaws.mobile.auth.userpools.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/title_activity_mfa" android:name="com.amazonaws.mobile.auth.userpools.MFAActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/title_activity_sign_up_confirm" android:name="com.amazonaws.mobile.auth.userpools.SignUpConfirmActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsManagerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.maxdigitall.maxdigitaliptvbox.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+    </application>
+</manifest>
